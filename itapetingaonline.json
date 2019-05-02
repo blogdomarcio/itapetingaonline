@@ -1,0 +1,28 @@
+{
+  "categorias" : [ {
+    "id" : 1,
+    "img" : 5,
+    "nome" : "Hotel"
+  }, {
+    "id" : 2,
+    "img" : "imagem2",
+    "nome" : "Alimentação"
+  }, {
+    "id" : 3,
+    "img" : "<MDBIcon icon=\"car-side\" />",
+    "nome" : "Educação"
+  } ],
+  "empresas" : [ {
+    "id" : 1,
+    "nome" : "Unopar",
+    "site" : "www.unopar.br",
+    "telefone" : 7732611775
+  }, {
+    "id" : 2,
+    "nome" : "Colégio Batista",
+    "site" : "www.cbas.com.br",
+    "telefone" : 7732611494
+  } 
+ ]
+}
+

@@ -1,0 +1,16 @@
+.menuback {
+  text-align: center;
+  color: black;
+  background-color: red;
+}
+
+.logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  height: 30vmin;
+  pointer-events: none;
+  width: 50%;
+  margin-bottom: 10px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
