@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 
-import Categorias from './categorias';
+import CategoriasHome from './categoriashome';
 import Home from './home';
+import Categoria from './categoria';
 
 import './home.css';
 
@@ -10,6 +11,7 @@ import logo from '../img/itapetinga.svg';
 import { 
   BrowserRouter as Router, 
   Route, Link } from 'react-router-dom';
+import Empresas from "./empresas";
 
 
 class NavbarPage extends Component {
@@ -32,6 +34,12 @@ render() {
         <li className="nav-item active">
           <Link className="nav-link" to="/categorias">Categorias</Link>
         </li>
+
+        <li className="nav-item active">
+          <Link className="nav-link" to="/empresas">Empresas</Link>
+        </li>
+
+
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Dropdown
@@ -63,7 +71,9 @@ render() {
   </div>
   <div className='container'>
   <Route exact path='/' component={Home} />
-  <Route exact path='/categorias' component={Categorias} />
+  <Route exact path='/categorias' component={CategoriasHome} />
+  <Route path='/empresas' component={Empresas} />
+
   
   </div>
   

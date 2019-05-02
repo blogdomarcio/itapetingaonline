@@ -34,19 +34,23 @@ export default class Categorias extends Component {
     const { match } = this.props
     return (
       <Route>
-      <div className="container">
-  <div className="row">
+      <div class="container">
+  <div class="row">
   {this.state.categorias.map(item => (
-    <div className="col-sm">
-    <Link to={`/empresas/${item.slug}`}>
-         <h5><strong>{item.nome}</strong></h5>
-     </Link>
+    <div class="col-sm">
+    <Link to={`empresas/${item.slug}`}> <h5><strong>{item.nome}</strong></h5></Link>
     </div>
   ))}
   </div>
 
 
   <div className='container'>
+
+ 
+  {JSON.stringify(this.props.match)}
+   
+
+  
   
   </div>
 </div>
